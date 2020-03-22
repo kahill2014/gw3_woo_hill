@@ -8,6 +8,67 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
+body, h1 {
+	font-family: "futura-pt",sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+h2 {
+	font-family: "future-pt",sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+.home {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	flex-flow: column;
+	justify-content: center;
+}
+.good-home {
+	background-color: #19629F;
+	color: #FBCA31;
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	justify-content: center;
+	min-height: 50vh;
+}
+.bad-home {
+	background-color: #FBCA31;
+	color: #4E4E4E;
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	align-items: flex-end;
+	justify-content: center;
+	min-height: 50vh;
+}
+.good-home h2 {
+	padding-top: 5vh;
+}
+.bad-home h2 {
+	padding-bottom: 5vh;
+}
+.home-banner {
+	background-color: rgba(255,255,255,.75);
+	color: #4E4E4E;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	flex-flow: column;
+	align-items: center;
+	position: fixed;
+	width: 100%;
+	height: 15vh;
+	padding: 2vh 0;
+}
+.home-banner > img {
+	width: 20vw;
+	height: 20vw;
+	padding-bottom: 1vh;
+}
+
 /*********** HAMBURGER MENU STYLES - https://codepen.io/g13nn/pen/eHGEF ***********/
 
 .hamburger{
