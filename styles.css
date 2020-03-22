@@ -18,55 +18,91 @@ h2 {
 	font-weight: 600;
 	font-style: normal;
 }
-.home {
-	display: flex;
-	flex: 1;
-	flex-basis: 100%;
-	flex-flow: column;
-	justify-content: center;
+@media screen and (min-width: 320px) {
+	.home {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		flex-flow: column;
+		justify-content: center;
+	}
+	.good-home {
+		background-color: #19629F;
+		color: #FBCA31;
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		justify-content: center;
+		min-height: 50vh;
+	}
+	.bad-home {
+		background-color: #FBCA31;
+		color: #4E4E4E;
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		align-items: flex-end;
+		justify-content: center;
+		min-height: 50vh;
+	}
+	.good-home h2 {
+		padding: 5vh 0;
+	}
+	.bad-home h2 {
+		padding: 5vh 0;
+	}
+	.home-banner {
+		background-color: rgba(255,255,255,.75);
+		color: #4E4E4E;
+		display: flex;
+		flex: 1;
+		justify-content: center;
+		flex-flow: column;
+		align-items: center;
+		position: fixed;
+		width: 100%;
+		height: 15vh;
+		padding: 20px 0;
+	}
+	.home-banner h1 {
+		font-size: 1.75rem;
+	}
+	.home-banner img {
+		width: 75px;
+		height: 75px;
+		padding-bottom: 5px;
+	}
 }
-.good-home {
-	background-color: #19629F;
-	color: #FBCA31;
-	display: flex;
-	flex: 1;
-	flex-basis: 100%;
-	justify-content: center;
-	min-height: 50vh;
-}
-.bad-home {
-	background-color: #FBCA31;
-	color: #4E4E4E;
-	display: flex;
-	flex: 1;
-	flex-basis: 100%;
-	align-items: flex-end;
-	justify-content: center;
-	min-height: 50vh;
-}
-.good-home h2 {
-	padding-top: 5vh;
-}
-.bad-home h2 {
-	padding-bottom: 5vh;
-}
-.home-banner {
-	background-color: rgba(255,255,255,.75);
-	color: #4E4E4E;
-	display: flex;
-	flex: 1;
-	justify-content: center;
-	flex-flow: column;
-	align-items: center;
-	position: fixed;
-	width: 100%;
-	height: 15vh;
-	padding: 2vh 0;
-}
-.home-banner > img {
-	width: 20vw;
-	height: 20vw;
-	padding-bottom: 1vh;
+@media screen and (min-width: 720px) {
+	.home {
+		flex-flow: row;
+		flex-wrap: wrap;
+	}
+	.home h2 {
+		font-size: 2.5rem;
+	}
+	.good-home {
+		flex-basis: 50%;
+		justify-content: center;
+		min-height: 100vh;
+	}
+	.bad-home {
+		flex-basis: 50%;
+		align-items: flex-start;
+		min-height: 100vh;
+	}
+	.home-banner {
+		align-self: flex-end;
+		order: 1;
+		height: 25vh;
+	}
+	.home-banner h1 {
+		font-size: 2rem;
+	}
+	.home-banner img {
+		width: 100px;
+		height: 100px;
+	}
 }
 
 /*********** HAMBURGER MENU STYLES - https://codepen.io/g13nn/pen/eHGEF ***********/
