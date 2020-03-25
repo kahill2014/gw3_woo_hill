@@ -86,12 +86,14 @@ body {
 		flex: 1;
 		flex-wrap: wrap;
 		justify-content: center;
+		max-width: 100vw;
 	}
 	header {
 		display: flex;
 		flex: 1;
 		flex-basis: 100%;
 		background-color: #fff;
+		height: 3rem;
 	}
 	.good-banner {
 		display: flex;
@@ -159,7 +161,6 @@ body {
 		width: 100%;
 	}
 	.carousel-section {
-		margin: 5rem;
 		overflow: hidden;
 	}
 	.carousel {
@@ -202,6 +203,9 @@ body {
 		display: flex;
 		flex: .5;
 		flex-basis: 33%;
+	}
+	.carousel-section {
+		margin: 5rem;
 	}
 }
 @media screen and (min-width: 720px) {
