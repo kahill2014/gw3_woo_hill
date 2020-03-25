@@ -79,7 +79,7 @@ h2 {
 		flex: 1;
 		flex-wrap: wrap;
 		justify-content: center;
-		padding: 0 5%;
+		padding: 0 8%;
 	}
 	.good-banner h1, .good-banner p, .good-banner article, .good-banner h2, .good-banner ul, .good-banner li{
 		display: flex;
@@ -95,6 +95,7 @@ h2 {
 	}
 	.good-banner p {
 		text-align: center;
+		margin: 1rem 0;
 	}
 	.good-banner article {
 		flex-wrap: wrap;
@@ -115,6 +116,24 @@ h2 {
 	.good-banner li::before {
 		content: "\2714";
 		padding-right: 1rem;
+	}
+	/***** PLUGIN STYLES *****/
+	#lightgallery {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		flex-wrap: wrap;
+		margin-top: 3rem;
+	}
+	#lightgallery > a {
+		display: flex;
+		flex: .5;
+		flex-basis: 50%;
+	}
+	#lightgallery > a > img {
+		display: flex;
+		flex: 1;
+		width: 100%;
 	}
 @media screen and (min-width: 720px) {
 	.home {
