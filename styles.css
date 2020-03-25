@@ -19,6 +19,7 @@ h2 {
 	font-style: normal;
 }
 @media screen and (min-width: 320px) {
+	/***** HOME STYLES *****/
 	.home {
 		display: flex;
 		flex: 1;
@@ -71,6 +72,49 @@ h2 {
 		width: 75px;
 		height: 75px;
 		padding-bottom: 5px;
+	}
+	/***** GOOD PLACE STYLES*****/
+	.good-banner {
+		display: flex;
+		flex: 1;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0 5%;
+	}
+	.good-banner h1, .good-banner p, .good-banner article, .good-banner h2, .good-banner ul, .good-banner li{
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		justify-content: center;
+	}
+	.good-banner h1 {
+		font-weight: 900;
+		font-size: 2rem;
+		text-align: center;
+		margin: 5% 0;
+	}
+	.good-banner p {
+		text-align: center;
+	}
+	.good-banner article {
+		flex-wrap: wrap;
+		margin-top: 5%;
+		padding: 0 10%;
+	}
+	.good-banner h2 {
+		justify-content: flex-start;
+		font-size: 1.3rem;
+	}
+	.good-banner ul {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+	}
+	.good-banner li {
+		justify-content: flex-start;
+	}
+	.good-banner li::before {
+		content: "\2714";
+		padding-right: 1rem;
 	}
 @media screen and (min-width: 720px) {
 	.home {
