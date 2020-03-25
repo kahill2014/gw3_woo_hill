@@ -18,6 +18,12 @@ h2 {
 	font-weight: 600;
 	font-style: normal;
 }
+body {
+	display: flex;
+	flex: 1;
+	flex-wrap: wrap;
+	justify-content: center;
+}
 @media screen and (min-width: 320px) {
 	/***** HOME STYLES *****/
 	.home {
@@ -74,6 +80,19 @@ h2 {
 		padding-bottom: 5px;
 	}
 	/***** GOOD PLACE STYLES*****/
+	.container {
+		background: rgba(255,255,255,.9);
+		display: flex;
+		flex: 1;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	header {
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		background-color: #fff;
+	}
 	.good-banner {
 		display: flex;
 		flex: 1;
@@ -104,7 +123,8 @@ h2 {
 	}
 	.good-banner h2 {
 		justify-content: flex-start;
-		font-size: 1.3rem;
+		font-size: 1.2rem;
+		padding-bottom: 5px;
 	}
 	.good-banner ul {
 		justify-content: flex-start;
@@ -112,18 +132,21 @@ h2 {
 	}
 	.good-banner li {
 		justify-content: flex-start;
+		padding: 5px 0;
 	}
 	.good-banner li::before {
 		content: "\2714";
 		padding-right: 1rem;
 	}
 	/***** PLUGIN STYLES *****/
+	.lightbox-section {
+		margin-top: 3rem;
+	}
 	#lightgallery {
 		display: flex;
 		flex: 1;
 		flex-basis: 100%;
 		flex-wrap: wrap;
-		margin-top: 3rem;
 	}
 	#lightgallery > a {
 		display: flex;
@@ -135,6 +158,52 @@ h2 {
 		flex: 1;
 		width: 100%;
 	}
+	.carousel-section {
+		margin: 5rem;
+		overflow: hidden;
+	}
+	.carousel {
+		background: #19629F;
+		display: flex;
+		flex: 1;
+		flex-basis: 100%;
+		color: #fff;
+	}
+	.carousel .carousel-slide {
+		background: #19629F;
+		text-align: center;
+		width: 100%;
+	}
+	.carousel .carousel-slide-inner {
+		padding: 2rem;
+	}
+	.carousel .carousel-slide-inner p{
+		margin-top: 1rem;
+	}
+	.slick-dots {
+		color: #fff;
+		display: inline-block;
+		background: #19629F;
+		padding-bottom: 1rem;
+		text-align: center;
+	}
+	.slick-dots li button::before, .slick-dots li.slick-active button::before{
+		color: #fff;
+	}
+}
+@media screen and (min-width: 600px) {
+	.good-banner h2 {
+		padding-bottom: 10px;
+	}
+	.good-banner article {
+		flex: .5;
+	}
+	#lightgallery > a {
+		display: flex;
+		flex: .5;
+		flex-basis: 33%;
+	}
+}
 @media screen and (min-width: 720px) {
 	.home {
 		flex-flow: row;
@@ -164,6 +233,17 @@ h2 {
 	.home-banner img {
 		width: 100px;
 		height: 100px;
+	}
+}
+@media screen and (min-width: 900px) {
+	.container {
+		display: flex;
+		justify-content: center;
+		align-self: center;
+		max-width: 60vw;
+	}
+	#lightgallery {
+		margin: 0 5vw;
 	}
 }
 
