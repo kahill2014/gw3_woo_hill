@@ -4,6 +4,9 @@
 		<meta charset="utf-8">
 		<title>The Bad Place</title>
 		<link rel="stylesheet" href="https://use.typekit.net/gri2qqb.css">
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/css/lightgallery.min.css" />
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+		<link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
 		<link type="text/css" rel="stylesheet" href="../styles.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,49 +17,98 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 
-	<body class="bad">
+	<body>
 		<header>
-			<header>
-				<nav class="desktop">
-					<a href="../index.html">LOBBY</a>
-					<a href="../index.html">[GP Logo]</a>
-					<a href="../index.html">THE GOOD PLACE</a>
-				</nav>
-				<nav class="menu">
-					<a href="../index.html">LOBBY</a>
-					<a href="../index.html">[GP Logo]</a>
-					<a href="../index.html">THE GOOD PLACE</a>
-				</nav>
-			</header>
+			<nav>
+				<a href="../index.html" class="nav-lobby"><img src="../images/common/blue-door.png" /><span>LOBBY</span></a>
+				<a href="../index.html" class="nav-logo"><img src="../images/common/logo.png" /></a>
+				<a href="good.html" class="nav-bad"><span>THE GOOD PLACE</span><img src="../images/common/yellow-door.png" /></a>
+			</nav>
 		</header>
-		<main class="container">
-			<section class="good-banner">
+		<main class="container bad-place">
+			<section class="top-banner bad-banner">
 				<h1>Welcome to the Bad Place</h1>
-				<p>Text here</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				Ut enim ad minim veniam, quis nostrud, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit
+				amet, consectetur adipiscing elit.</p>
 				<article>
 					<h2>Community Amenities</h2>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li>Aliquam tincidunt mauris.</li>
+						<li>Vestibulum auctor.</li>
+						<li>Nunc dignissim risus.</li>
+						<li>Aliquam tincidunt mauris.</li>
+						<li>Vestibulum auctor.</li>
+						<li>Nunc dignissim risus.</li>
 					</ul>
 				</article>
 				<article>
 					<h2>Community Policies</h2>
 					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
+						<li>Aliquam tincidunt mauris.</li>
+						<li>Vestibulum auctor.</li>
+						<li>Nunc dignissim risus.</li>
+						<li>Aliquam tincidunt mauris.</li>
+						<li>Vestibulum auctor.</li>
+						<li>Nunc dignissim risus.</li>
 					</ul>
 				</article>
 			</section>
-			<section>
+			<section class="lightbox-section">
 				<!-- Lightbox gallery here -->
+				<div id="lightgallery">
+					<a href="../images/good-place-images/feast.jpg">
+						<img src="../images/good-place-images/feast_thumb.jpg" />
+					</a>
+					<a href="../images/good-place-images/garden.jpg">
+						<img src="../images/good-place-images/garden_thumb.jpg" />
+					</a>
+					<a href="../images/good-place-images/house-driveway.jpg">
+						<img src="../images/good-place-images/house-driveway_thumb.jpg" />
+					</a>
+					<a href="../images/good-place-images/house-yard.jpg">
+						<img src="../images/good-place-images/house-yard_thumb.jpg" />
+					</a>
+					<a href="../images/good-place-images/ice-cream.jpg">
+						<img src="../images/good-place-images/ice-cream_thumb.jpg" />
+					</a>
+					<a href="../images/good-place-images/two-smiling-women.jpg">
+						<img src="../images/good-place-images/two-smiling-women_thumb.jpg" />
+					</a>
+				</div>
 			</section>
-			<section>
+			<section class="carousel-section">
 				<!-- Carousel here -->
+				<div class="carousel">
+					<div class="carousel-slide">
+						<div class="carousel-slide-inner">
+							<h3>Testimonials</h3>
+							<p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud.</p>
+							<p>- Michael Smith, +2130</p>
+						</div>
+					</div>
+					<div class="carousel-slide">
+						<div class="carousel-slide-inner">
+							<h3>Testimonials</h3>
+							<p>2. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud.</p>
+						</div>
+					</div>
+					<div class="carousel-slide">
+						<div class="carousel-slide-inner">
+							<h3>Testimonials</h3>
+							<p>3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enim ad minim veniam, quis nostrud.</p>
+						</div>
+					</div>
+				</div>
 			</section>
 		</main>
 		<script src="../js/hamburger.js"></script>
+		<script src="../js/backstretch.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.12/js/lightgallery-all.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<script src="../js/main.js"></script>
 	</body>
 </html>

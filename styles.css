@@ -134,48 +134,48 @@ nav a span {
 	color: #000;
 	display: none;
 }
-.good-banner {
+.top-banner {
 	display: flex;
 	flex: 1;
 	flex-wrap: wrap;
 	justify-content: center;
 	padding: 0 8%;
 }
-.good-banner h1, .good-banner p, .good-banner article, .good-banner h2, .good-banner ul, .good-banner li{
+.top-banner h1, .top-banner p, .top-banner article, .top-banner h2, .top-banner ul, .top-banner li{
 	display: flex;
 	flex: 1;
 	flex-basis: 100%;
 	justify-content: center;
 }
-.good-banner h1 {
+.top-banner h1 {
 	font-weight: 900;
 	font-size: 2rem;
 	text-align: center;
 	margin: 5% 0;
 }
-.good-banner p {
+.top-banner p {
 	text-align: center;
 	margin: 1rem 0;
 }
-.good-banner article {
+.top-banner article {
 	flex-wrap: wrap;
 	margin-top: 5%;
 	padding: 0 10%;
 }
-.good-banner h2 {
+.top-banner h2 {
 	justify-content: flex-start;
 	font-size: 1.2rem;
 	padding-bottom: 5px;
 }
-.good-banner ul {
+.top-banner ul {
 	justify-content: flex-start;
 	flex-wrap: wrap;
 }
-.good-banner li {
+.top-banner li {
 	justify-content: flex-start;
 	padding: 5px 0;
 }
-.good-banner li::before {
+.top-banner li::before {
 	content: "\2714";
 	padding-right: 1rem;
 }
@@ -220,6 +220,9 @@ nav a span {
 .carousel .carousel-slide-inner p{
 	margin-top: 1rem;
 }
+.bad-place .carousel, .bad-place .carousel .carousel-slide, .bad-place .carousel .slick-dots {
+	background: #000;
+}
 .slick-dots {
 	color: #fff;
 	display: inline-block;
@@ -230,16 +233,11 @@ nav a span {
 .slick-dots li button::before, .slick-dots li.slick-active button::before{
 	color: #fff;
 }
-@media screen and (min-width: 550px) {
-	nav a span {
-		display: block;
-	}
-}
-@media screen and (min-width: 600px) {
-	.good-banner h2 {
+@media screen and (min-width: 610px) {
+	.top-banner h2 {
 		padding-bottom: 10px;
 	}
-	.good-banner article {
+	.top-banner article {
 		flex: .5;
 	}
 	#lightgallery > a {
@@ -249,6 +247,9 @@ nav a span {
 	}
 	.carousel-section {
 		margin: 5rem;
+	}
+	nav a span {
+		display: block;
 	}
 }
 @media screen and (min-width: 720px) {
