@@ -80,7 +80,7 @@ body {
 }
 /***** GOOD/BAD PLACE STYLES*****/
 .container {
-	background: rgba(255,255,255,.9);
+	background: rgba(255,255,255,.8);
 	display: flex;
 	flex: 1;
 	flex-wrap: wrap;
@@ -277,6 +277,9 @@ nav a span {
 	}
 	.home-banner h1 {
 		font-size: 2rem;
+	}
+	.top-banner h1 {
+		margin-bottom: 0;
 	}
 	.home-banner img {
 		width: 100px;
