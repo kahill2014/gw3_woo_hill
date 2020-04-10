@@ -265,7 +265,7 @@ nav a span {
 		order: 3;
 		position: fixed;
 		width: 100%;
-		height: 120px;
+		height: 160px;
 		align-self: flex-end;
 		display: flex;
 		flex-wrap: wrap;
@@ -278,12 +278,13 @@ nav a span {
 	}
 	.subhead {
 		display: block;
+		font-size: 2rem;
 	}
 	.logo {
 		width: 70px;
 	}
 	.good-home, .bad-home {
-		height: 100vh;
+		height: 80vh;
 		width: 50%;
 	}
 	.door img {
@@ -303,6 +304,10 @@ nav a span {
 }
 
 @media screen and (min-width: 900px) {
+	/* homepage */
+	.logo {
+		width: 80px;
+	}
 	/* good & bad place */
 	.container {
 		display: flex;
@@ -323,5 +328,11 @@ nav a span {
 	.home h2 {
     padding-bottom: 6%;
     font-size: 1.8rem;
+	}
+	.logo {
+		width: 90px;
+	}
+	.home-banner {
+		padding-bottom: 30px;
 	}
 }
