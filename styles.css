@@ -94,6 +94,8 @@ header {
 	height: 5rem;
 	box-shadow: 0 4px 2px -2px #bbb;
 	z-index: 999;
+	position: fixed;
+	width: 100%;
 }
 nav {
 	display: flex;
@@ -104,34 +106,34 @@ nav {
 nav .nav-lobby img, .nav-bad img, .nav-good img {
 	width: 1.5rem;
 	height: 3rem;
-	margin-top: 1rem;
 }
 nav .nav-logo img {
 	width: 5rem;
 	height: 5rem;
 }
-nav a {
+nav div {
 	display: flex;
 	flex: 1;
 	justify-content: center;
 	text-decoration: none;
 	font-weight: 900;
 }
-nav a:first-child {
+nav div:first-child {
 	margin-right: auto;
 	justify-content: flex-start;
 	padding-left: 1rem;
 }
-nav a:last-child {
+nav div:last-child {
 	margin-left: auto;
 	justify-content: flex-end;
 	padding-right: 1rem;
 }
-nav a span {
-	margin: 0 1rem;
-	margin-top: 1.75rem;
+nav div span {
 	color: #000;
 	display: none;
+}
+nav .nav-item {
+	margin-top: 1rem;
 }
 .top-banner {
 	display: flex;
@@ -151,6 +153,7 @@ nav a span {
 	font-size: 2rem;
 	text-align: center;
 	margin: 5% 0;
+	margin-top: 8rem;
 }
 .top-banner p {
 	text-align: center;
@@ -176,7 +179,7 @@ nav a span {
 }
 .top-banner li::before {
 	content: "\2714";
-	padding-right: 1rem;
+	padding-right: 5%;
 }
 
 /***** PLUGIN STYLES *****/
@@ -257,12 +260,42 @@ nav a span {
 	.carousel-section {
 		margin: 5rem;
 	}
-	nav a span {
-		display: block;
+	nav .nav-item {
+		margin-top: 0;
+	}
+	nav .nav-item a {
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+		padding-top: 1rem;
+	}
+	nav .nav-item span {
+		display: inline-block;
+		margin: 0 2rem;
+		padding-top: .75rem;
+	}
+	nav .nav-item img {
+		position: absolute;
+	}
+	nav .nav-item:first-child a {
+		padding-right: 0;
+	}
+	nav .nav-item:last-child a {
+		padding-right: 1.5rem;
+	}
+	nav .nav-item:first-child a span {
+		margin-right: 0;
+	}
+	nav .nav-item:last-child a span {
+		margin-right: .5rem;
+		margin-left: 0;
 	}
 }
 
 @media screen and (min-width: 720px) {
+	body {
+		font-size: 1.2rem;
+	}
 	/* homepage */
 	.home {
 		flex-flow: row;
@@ -317,15 +350,17 @@ nav a span {
     padding-bottom: 8%;
 		font-size: 1.8rem;
 	}
+	
+}
+@media screen and (min-width: 800px) {
 	/* good & bad place */
-	nav a:first-child {
-		padding-left: 3rem;
-	}
 	nav a:last-child {
 		padding-right: 3rem;
 	}
+	nav a.nav-logo {
+		padding-right: 0;
+	}
 }
-
 @media screen and (min-width: 900px) {
 	/* homepage */
 	.logo {
