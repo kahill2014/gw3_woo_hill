@@ -4,6 +4,6 @@ function hide() {
 
 window.addEventListener("load",
   function() {
-    setTimeout(hide, 2500);
+    setTimeout(hide, 2000);
   }, false
 );
