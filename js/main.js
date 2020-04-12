@@ -5,11 +5,11 @@ if($('.good-place').length){
 }
 
 $(document).ready(function() {
-	$('#lightgallery').lightGallery(); 
+	$('#lightgallery').lightGallery();
 });
 $('.carousel').slick({
 	dots: true,
 	infinite: true,
 	autoplay: true,
-	autoplaySpeed: 5000
+	autoplaySpeed: 5500
 });
