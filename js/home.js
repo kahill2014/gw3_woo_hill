@@ -1,9 +1,6 @@
-function hide() {
-  document.getElementById("intro").className = "hide";
-}
-
-window.addEventListener("load",
-  function() {
-    setTimeout(hide, 2000);
-  }, false
-);
+/* After the document loads, wait 2 seconds then fade out the intro overlay */
+$(document).ready(function(){
+	setTimeout(function(){
+		$("#intro").addClass("hide");
+	}, 2000);
+});
