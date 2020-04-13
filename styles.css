@@ -467,7 +467,7 @@ footer {
 		font-size: 1.8rem;
 	}
 	
-	/* Door opening animation: */
+	/* Door opening animation: https://codepen.io/am_eu/pen/EgZdaQ */
 	.doorBack-bad {
 		background-color: #000;
 		width: 180px;
