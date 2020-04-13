@@ -93,6 +93,7 @@ body, .home {
 .door img {
 	width: 90px;
 }
+
 .home-banner {
 	background-color: #fff;
 	color: #4E4E4E;
@@ -438,7 +439,7 @@ footer {
 		width: 50%;
 	}
 	.door img {
-    width: 180px;
+		width: 180px;
 	}
 	/* Door glow animation https://codepen.io/Stockin/pen/XPvpoB */
 	.door img {
@@ -447,23 +448,44 @@ footer {
 
 	.door img:hover:before {
 		transform: scale(1.5);
-  	box-shadow: 0 0 35px #fff;
-  	filter: blur(5px);
+		box-shadow: 0 0 35px #fff;
+		filter: blur(5px);
 	}
 	.door img:hover {
-	  box-shadow: 0 0 35px #fff;
-	  text-shadow: 0 0 35px #fff;
+		box-shadow: 0 0 35px #fff;
+		text-shadow: 0 0 35px #fff;
 	}
 	.bad-home .door img:hover:before {
-  	box-shadow: 0 0 35px #000;
+		box-shadow: 0 0 35px #000;
 	}
 	.bad-home .door img:hover {
-	  box-shadow: 0 0 35px #000;
-	  text-shadow: 0 0 35px #000;
+		box-shadow: 0 0 35px #000;
+		text-shadow: 0 0 35px #000;
 	}
 	.home h2 {
-    padding-bottom: 8%;
+		padding-bottom: 8%;
 		font-size: 1.8rem;
+	}
+	
+	/* Door opening animation: */
+	.doorBack-bad {
+		background-color: #000;
+		width: 180px;
+	}
+	.doorBack-good {
+		background-color: #fff;
+		width: 180px;
+	}
+	.door {
+		width: 100%;
+		margin-bottom: -10px;
+		transform-origin: left;
+		/*Speed of the Door animation*/
+		transition: all 1.5s ease-in-out;
+	}
+	.doorOpen {
+		/*prespectiv creates the door open effect*/
+		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
 	}
 
 }
