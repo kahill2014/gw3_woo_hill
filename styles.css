@@ -268,6 +268,81 @@ nav .nav-item {
 .slick-dots li button::before, .slick-dots li.slick-active button::before{
 	color: #fff;
 }
+.slick-dotted.slick-slider {
+	margin-bottom: 20px;
+}
+
+/***** FOOTER/MODAL STYLES *****/
+footer {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	width: 100vw;
+	padding: 2rem 1rem;
+	justify-content: center;
+}
+.good-footer {
+	background-color: #FBCA31;
+	color: #4E4E4E;
+}
+.bad-footer {
+	background-color: #4E4E4E;
+	color: #ddd;
+}
+.footer-contact {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+}
+.footer-contact p {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+}
+.footer-tour {
+	display: flex;
+	flex: 1;
+	flex-basis: 100%;
+	justify-content: center;
+	align-items: center;
+}
+.footer-tour a {
+	text-decoration: none;
+	color: #fff;
+	padding: .5rem;
+	border: 1px solid #4E4E4E;
+	border-radius: 5px;
+	margin-top: 1rem;
+}
+.good-tour a {
+	background-color: #19629F;
+	transition: .15s;
+}
+.good-tour a:hover {
+	background-color: #1962BF;
+}
+.bad-tour a {
+	background-color: #000;
+	transition: .15s;
+}
+.bad-tour a:hover {
+	background-color: #222;
+}
+
+@media screen and (min-width: 460px) {
+	footer {
+		flex-wrap: no-wrap;
+	}
+	.footer-contact, .footer-tour {
+		flex: .5;
+		flex-basis: 50%;
+	}
+	.footer-tour a {
+		margin-top: 0;
+	}
+}
 
 @media screen and (min-width: 610px) {
 	/* homepage */
@@ -415,6 +490,14 @@ nav .nav-item {
 	}
 	#lightgallery {
 		margin: 0 5vw;
+	}
+	.footer-contact {
+		max-width: 30%;
+		padding-left: 5rem;
+	}
+	.footer-tour {
+		max-width: 30%;
+		padding-right: 2rem;
 	}
 }
 
