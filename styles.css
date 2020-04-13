@@ -291,6 +291,17 @@ footer {
 	background-color: #4E4E4E;
 	color: #ddd;
 }
+.bad-contact a {
+	color: #DDDDDD;
+	text-decoration: none;
+}
+.good-contact a {
+	color: #4E4E4E;
+	text-decoration: none;
+}
+.footer-contact a:hover {
+	text-decoration: underline;
+}
 .footer-contact {
 	display: flex;
 	flex: 1;
@@ -302,11 +313,14 @@ footer {
 	flex: 1;
 	flex-basis: 100%;
 }
+.mrg-top {
+	margin-top: 5%;
+}
 .footer-tour {
 	display: flex;
 	flex: 1;
 	flex-basis: 100%;
-	justify-content: center;
+	justify-content: left;
 	align-items: center;
 }
 .footer-tour a {
@@ -342,6 +356,9 @@ footer {
 	}
 	.footer-tour a {
 		margin-top: 0;
+	}
+	.footer-tour {
+		justify-content: flex-end;
 	}
 }
 
@@ -466,7 +483,7 @@ footer {
 		padding-bottom: 8%;
 		font-size: 1.8rem;
 	}
-	
+
 	/* Door opening animation: https://codepen.io/am_eu/pen/EgZdaQ */
 	.doorBack-bad {
 		background-color: #000;
@@ -519,7 +536,7 @@ footer {
 	}
 	.footer-tour {
 		max-width: 30%;
-		padding-right: 2rem;
+		padding-right: 5rem;
 	}
 }
 
