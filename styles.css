@@ -47,6 +47,40 @@ body, .home {
 	animation: fade 1s linear 1s 1;
 }
 
+.intro-good {
+	background-color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	z-index: 1000000000000;
+	animation: fade 1s linear 1s 1;
+}
+
+.intro-bad {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+	z-index: 1000000000000;
+	animation: fade 1s linear 1s 1;
+}
+
 .hide {
 	display: none;
 }

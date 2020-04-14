@@ -4,10 +4,7 @@ if($('.good-place').length){
 } else if($('.bad-place').length) {
 	$.backstretch('../images/bad-place-images/bad-place-background.jpg');
 }
-/* Initialize light gallery on the good/bad place pages */
-$(document).ready(function() {
-	$('#lightgallery').lightGallery();
-});
+
 /* Initialize the Slick plugin for testimonial slides */
 $('.carousel').slick({
 	dots: true,
@@ -15,12 +12,19 @@ $('.carousel').slick({
 	autoplay: true,
 	autoplaySpeed: 5500
 });
+
 /* Call hover on navigation doors when their label is hovered */
 $('.nav-item a').hover(function(){
 	toggleHover(this);
 }, function(){
 	toggleHover(this);
 });
+
+$(document).ready(function() {
+	/* Initialize light gallery on the good/bad place pages */
+	$('#lightgallery').lightGallery();
+});
+
 /* Toggles hover class for navigation elements - avoids repeating code */
 function toggleHover(e){
 	var nav_img = $(e).find('img');
