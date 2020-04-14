@@ -289,6 +289,29 @@ nav .nav-item {
 	padding-right: 5%;
 }
 
+/* Zoom in on image hover gallery https://codepen.io/nxworld/pen/ZYNOBZ */
+.gallery a {
+	/* width: 240px;
+	height: 240px; */
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+.gallery a:hover {
+	bottom: -36px;
+	opacity: 1;
+}
+.gallery a img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.gallery a:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
 
 /* ***** PLUGIN STYLES ***** */
 .lightbox-section {
