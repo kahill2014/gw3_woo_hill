@@ -16,11 +16,7 @@ $('.carousel').slick({
 	autoplaySpeed: 5500
 });
 /* Call hover on navigation doors when their label is hovered */
-$('.nav-item a').hover(function(){
-	toggleHover(this);
-}, function(){
-	toggleHover(this);
-});
+$('.nav-item a').hover(toggleHover(this),toggleHover(this));
 /* Toggles hover class for navigation elements - avoids repeating code */
 function toggleHover(e){
 	var nav_img = $(e).find('img');
