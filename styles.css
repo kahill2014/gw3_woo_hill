@@ -150,7 +150,7 @@ body, .home {
 	box-shadow: 1px 1px 4px rgba(255, 255, 255, 0.5);
 	height: 10%;
 	display: flex;
-  justify-content: center;
+	justify-content: center;
 }
 
 .logo {
@@ -536,18 +536,18 @@ footer {
 
 /* confetti css animation */
 .confetti-container {
-  width: 100%;
-  height: 100vh;
+	width: 100%;
+	height: 75vh;
 	position:absolute;
 }
 .confetti {
-  width: 15px;
-  height: 15px;
-  background-color: #FBCA31;
-  position: fixed;
-  left: 50%;
-  animation: confetti 5s ease-in-out -2s 1;
-  transform-origin: top;
+	width: 15px;
+	height: 15px;
+	background-color: #FBCA31;
+	position: fixed;
+	left: 50%;
+	animation: confetti 5s ease-in-out -2s 1;
+	transform-origin: top;
 }
 .confetti:nth-child(1) {
   background-color: #19629F; left: 10%; animation-delay: 0;
@@ -629,11 +629,11 @@ footer {
 @media screen and (min-width: 610px) {
 	/* homepage */
 	.door img {
-    width: 100px;
+		width: 100px;
 	}
 
 	.home h2 {
-    padding-bottom: 2.5%;
+		padding-bottom: 2.5%;
 	}
 
 	/* good & bad place */
@@ -793,12 +793,12 @@ footer {
 		width: 100%;
 		margin-bottom: -10px;
 		transform-origin: left;
-		/*Speed of the Door animation*/
+		/* Speed of the door animation */
 		transition: all 1.5s ease-in-out;
 	}
 
 	.doorOpen {
-		/*prespectiv creates the door open effect*/
+		/* Perspective creates the door open effect */
 		transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
 	}
 }
@@ -879,16 +879,16 @@ footer {
 @media screen and (min-width: 1440px) {
 	/* homepage */
 	.door img {
-    width: 230px;
+		width: 230px;
 	}
 
 	.doorBack-good, .doorBack-bad {
-    width: 230px;
+		width: 230px;
 	}
 
 	.home h2 {
-    padding-bottom: 6%;
-    font-size: 1.8rem;
+		padding-bottom: 6%;
+		font-size: 1.8rem;
 	}
 
 	.logo {
