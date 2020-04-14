@@ -545,6 +545,9 @@ footer {
 	.door img {
     width: 230px;
 	}
+	.doorBack-good, .doorBack-bad {
+    width: 230px;
+	}
 	.home h2 {
     padding-bottom: 6%;
     font-size: 1.8rem;
