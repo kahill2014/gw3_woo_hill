@@ -29,7 +29,7 @@ body, .home {
 }
 
 
-/***** INTRO STYLES *****/
+/* ***** INTRO STYLES ***** */
 .intro {
 	background-color: #fff;
 	position: absolute;
@@ -73,7 +73,7 @@ body, .home {
 }
 
 
-/***** HOME STYLES *****/
+/* ***** HOME STYLES ***** */
 .home {
 	display: flex;
 	flex-flow: column;
@@ -128,7 +128,7 @@ body, .home {
 }
 
 
-/***** GOOD/BAD PLACE STYLES*****/
+/* ***** GOOD/BAD PLACE STYLES***** */
 .container {
 	background: rgba(255,255,255,.8);
 	display: flex;
@@ -196,12 +196,11 @@ nav .nav-item {
 	margin-top: 1rem;
 }
 
-/* door glow for main nav */
+/* door glow for nav */
 .door img, .nav-item img {
 	transition: 0.7s ease-in-out;
 }
 
-/* bad door */
 .nav-bad img:hover:before {
 	transform: scale(1.1);
 	box-shadow: 0 0 35px #000;
@@ -213,7 +212,6 @@ nav .nav-item {
 	text-shadow: 0 0 15px #000;
 }
 
-/* lobby door */
 .nav-lobby img:hover:before {
 	transform: scale(1.1);
 	box-shadow: 0 0 15px #19629F;
@@ -225,7 +223,6 @@ nav .nav-item {
 	text-shadow: 0 0 15px #19629F;
 }
 
-/* good door */
 .nav-good img:hover:before {
 	transform: scale(1.1);
 	box-shadow: 0 0 15px #FBCA31;
@@ -293,7 +290,7 @@ nav .nav-item {
 }
 
 
-/***** PLUGIN STYLES *****/
+/* ***** PLUGIN STYLES ***** */
 .lightbox-section {
 	margin-top: 3rem;
 }
@@ -364,7 +361,7 @@ nav .nav-item {
 }
 
 
-/***** FOOTER/MODAL STYLES *****/
+/* ***** FOOTER/MODAL STYLES ***** */
 footer {
 	display: flex;
 	flex: 1;
@@ -427,7 +424,7 @@ footer {
 .footer-tour a {
 	text-decoration: none;
 	color: #fff;
-	padding: .5rem;
+	padding: .5rem 1rem;
 	border: 1px solid #4E4E4E;
 	border-radius: 5px;
 	margin-top: 1rem;
