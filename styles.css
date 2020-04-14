@@ -201,35 +201,35 @@ nav .nav-item {
 	transition: 0.7s ease-in-out;
 }
 
-.nav-bad img:hover:before {
+.hover-bad:before {
 	transform: scale(1.1);
 	box-shadow: 0 0 35px #000;
 	filter: blur(3px);
 }
 
-.nav-bad img:hover {
+.hover-bad {
 	box-shadow: 0 0 15px #000;
 	text-shadow: 0 0 15px #000;
 }
 
-.nav-lobby img:hover:before {
+.hover-lobby:before {
 	transform: scale(1.1);
 	box-shadow: 0 0 15px #19629F;
 	filter: blur(3px);
 }
 
-.nav-lobby img:hover {
+.hover-lobby {
 	box-shadow: 0 0 15px #19629F;
 	text-shadow: 0 0 15px #19629F;
 }
 
-.nav-good img:hover:before {
+.hover-good:before {
 	transform: scale(1.1);
 	box-shadow: 0 0 15px #FBCA31;
 	filter: blur(3px);
 }
 
-.nav-good img:hover {
+.hover-good {
 	box-shadow: 0 0 15px #FBCA31;
 	text-shadow: 0 0 15px #FBCA31;
 }
