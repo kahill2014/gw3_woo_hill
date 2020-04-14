@@ -459,7 +459,7 @@ footer {
 		width: 180px;
 	}
 	/* Door glow animation https://codepen.io/Stockin/pen/XPvpoB */
-	.door img {
+	.door img, .nav-item img {
 		transition: 0.7s ease-in-out;
 	}
 
@@ -482,6 +482,38 @@ footer {
 	.home h2 {
 		padding-bottom: 8%;
 		font-size: 1.8rem;
+	}
+
+	/* door glow for main nav */
+	/* bad door */
+	.nav-bad img:hover:before {
+		transform: scale(1.1);
+		box-shadow: 0 0 35px #000;
+		filter: blur(3px);
+	}
+	.nav-bad img:hover {
+		box-shadow: 0 0 15px #000;
+		text-shadow: 0 0 15px #000;
+	}
+	/* lobby door */
+	.nav-lobby img:hover:before {
+		transform: scale(1.1);
+		box-shadow: 0 0 15px #19629F;
+		filter: blur(3px);
+	}
+	.nav-lobby img:hover {
+		box-shadow: 0 0 15px #19629F;
+		text-shadow: 0 0 15px #19629F;
+	}
+	/* good door */
+	.nav-good img:hover:before {
+		transform: scale(1.1);
+		box-shadow: 0 0 15px #FBCA31;
+		filter: blur(3px);
+	}
+	.nav-good img:hover {
+		box-shadow: 0 0 15px #FBCA31;
+		text-shadow: 0 0 15px #FBCA31;
 	}
 
 	/* Door opening animation: https://codepen.io/am_eu/pen/EgZdaQ */
